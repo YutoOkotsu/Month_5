@@ -1,4 +1,3 @@
-from django.urls import path
 from rest_framework import viewsets
 from .models import Category, Product, Review
 from .serializers import CategorySerializer, ProductSerializer, ReviewSerializer
