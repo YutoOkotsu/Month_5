@@ -55,6 +55,7 @@ class ReviewView(View):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
 class UserSet(viewsets.ModelViewSet):
     ...
 @action(detail=False, methods=['post'])
